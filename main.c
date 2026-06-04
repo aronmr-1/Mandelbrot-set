@@ -56,6 +56,7 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
     SDL_SetRenderLogicalPresentation(renderer, WINDOW_WIDTH, WINDOW_HEIGHT, SDL_LOGICAL_PRESENTATION_LETTERBOX);
 
 		texture = SDL_CreateTextureFromSurface(renderer, surface);
+		SDL_DestroySurface(surface);
 		if (texture == NULL) {
 			SDL_Log("CreateTextureFromSurface failed: %s", SDL_GetError());
 		}
