@@ -7,13 +7,12 @@ built mostly as a coding exercise.
 
 
 ## Building
-
 Follows https://github.com/libsdl-org/SDL/blob/main/docs/INTRO-cmake.md.
 
 As for dependencises CMake and a c compiler should suffice, for more 
 info see the link above.
 
-First clone the SDL source:
+After cloning the source code, clone the SDL source:
 ```bash
   git clone https://github.com/libsdl-org/SDL.git vendored/SDL
 ```
